@@ -1,7 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Computer;
+use App\TypeComputer;
+use App\Lease;
+use App\Staff;
+use App\Tariff;
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +28,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $revenue = Computer::count();
+        $storages = Tariff::count();
+        $customers = Staff::count();
+        $products = TypeComputer::count();
+        return view('homepage.index', compact(['revenue', 'storages','products', 'customers']));
     }
 }

@@ -13,8 +13,12 @@ class CreateTariffTable extends Migration
      */
     public function up()
     {
-        Schema::create('tariff', function (Blueprint $table) {
+        Schema::create('tariffs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->integer('price');
+            $table->integer('start_period');
+            $table->integer('end_period');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateTariffTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tariff');
+        Schema::dropIfExists('tariffs');
     }
 }

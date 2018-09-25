@@ -28,7 +28,24 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function role(){
-        return $this->hasOne('role', 'id', 'id_role');
+    public function roles()
+    {
+        return $this->BelongsTo(Role::class);
+    }
+
+    public function authorizeRoles($roles)
+    {
+       return true;
+    }
+
+    public function hasAnyRole($roles)
+    {
+        return null !== $this->roles()->whereIn('name', $roles)->first();
+    }
+
+
+    public function hasRole($role)
+    {
+        return null !== $this->roles()->where('name', $role)->first();
     }
 }

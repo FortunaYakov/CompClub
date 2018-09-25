@@ -13,13 +13,12 @@ class CreateLeaseTable extends Migration
      */
     public function up()
     {
-        Schema::create('lease', function (Blueprint $table) {
+        Schema::create('leases', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('start_date');
-            $table->date('end_date');
             $table->integer('id_tariff');
             $table->integer('id_user');
             $table->integer('id_computer');
+            $table->integer('hours');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateLeaseTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lease');
+        Schema::dropIfExists('leases');
     }
 }

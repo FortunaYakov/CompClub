@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Staff extends Model
 {
+    protected $table = "staffs";
     public function computer(){
-        return $this->hasMany('computer', 'id_staff', 'id');
+        return $this->hasMany(Computer::class);
     }
 }

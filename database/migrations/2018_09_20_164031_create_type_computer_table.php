@@ -13,7 +13,7 @@ class CreateTypeComputerTable extends Migration
      */
     public function up()
     {
-        Schema::create('type_computer', function (Blueprint $table) {
+        Schema::create('type_computers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type_computer');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateTypeComputerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type_computer');
+        Schema::dropIfExists('type_computers');
     }
 }

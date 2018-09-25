@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Lease extends Model
 {
     public function user(){
-        return $this->hasOne('user', 'id', 'id_user');
+        return $this->hasOne('App\User', 'id', 'id_user');
     }
 
     public function tariff(){
-        return $this->BelongsTo('tariff', 'id', 'id_tariff');
+        return $this->BelongsTo('App\Tariff', 'id_tariff', 'id');
     }
 
     public function computer(){
-        return $this->BelongsTo('computer', 'id', 'id_computer');
+        return $this->BelongsTo('App\Computer', 'id_computer', 'id');
     }
 }

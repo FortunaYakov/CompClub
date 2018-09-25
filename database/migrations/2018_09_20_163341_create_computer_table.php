@@ -13,7 +13,7 @@ class CreateComputerTable extends Migration
      */
     public function up()
     {
-        Schema::create('computer', function (Blueprint $table) {
+        Schema::create('computers', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_staff');
             $table->boolean('status');
@@ -29,6 +29,6 @@ class CreateComputerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('computer');
+        Schema::dropIfExists('computers');
     }
 }

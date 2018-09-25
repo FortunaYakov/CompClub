@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Computer extends Model
 {
-    public function computer(){
-        return $this->hasMany('computer', 'id_computer', 'id');
+    public function typecomputer(){
+        return $this->BelongsTo('App\TypeComputer', 'id_type', 'id');
     }
 
     public function staff(){
-        return $this->BelongsTo('staff', 'id', 'id_staff');
+        return $this->BelongsTo('App\Staff', 'id_staff', 'id');
     }
 }
