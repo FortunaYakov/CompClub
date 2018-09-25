@@ -54,4 +54,4 @@ Route::post('/tariff/{tariff}/delete', 'TariffController@delete');
 Route::get('/typeComputer', 'TypeComputerController@index');
 Route::post('/typeComputer', 'TypeComputerController@store')->name('typeComputer.store');
 Route::post('/typeComputer/{typeComputer}', 'TypeComputerController@update')->name('typeComputer.update');
-Route::post('/typeComputer/{typeComputer}/delete', 'TypeComputerController@delete');
+Route::post('/typeComputer/{typeComputer}/delete', 'TypeComputerController@delete')->name('typeComputer.delete');;

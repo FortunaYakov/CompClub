@@ -17,47 +17,32 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group col-md-12">
-                                <label class="control-label" for="name">Full Name</label>
-                                <input type="text" placeholder="Enter Full Name" class="form-control form-control-line" name="name" id="name" required>
-                                <span class="text-danger">
-                                        <strong id="name-error"></strong>
-                                </span>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label class="control-label" for="credit">Credit, $</label>
-                                <input type="number" min="0" step="0.01" value="0" class="form-control form-control-line" id="credit" name="credit" required>
-                                <span class="text-danger">
-                                        <strong id="credit-error"></strong>
-                                </span>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label class="control-label" for="prepayment">Prepayment, $</label>
-                                <input type="number" min="0" step="0.01" value="0" class="form-control form-control-line" id="prepayment" name="prepayment" required>
-                                <span class="text-danger">
-                                        <strong id="prepayment-error"></strong>
-                                </span>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label class="control-label" for="email">Email</label>
-                                <input type="email" placeholder="Enter Email" class="form-control form-control-line" name="email" id="email" required>
-                                <span class="text-danger">
-                                        <strong id="email-error"></strong>
-                                </span>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label class="control-label" for="phone">Phone</label>
-                                <input type="text" placeholder="Enter Phone" class="form-control form-control-line" name="phone" id="phone" required>
-                                <span class="text-danger">
-                                        <strong id="phone-error"></strong>
-                                </span>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label class="control-label" for="country">Select User</label>
-                                <select class="form-control form-control-line" name="user" id="country">
-                                    {{--@foreach($user as $u)--}}
-                                        {{--<option selected>{{ $u }}</option>--}}
-                                    {{--@endforeach--}}
+                                <label class="control-label">Select user</label>
+                                <select class="form-control form-control-line" name="user">
+                                    @foreach($user as $u)
+                                            <option value="{{$u->id}}"> {{ $u->name }}</option>
+                                    @endforeach
                                 </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="control-label" >Select tariff</label>
+                                <select class="form-control form-control-line" name="tariff">
+                                    @foreach($tariff as $u)
+                                        <option value="{{$u->id}}">{{ $u->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="control-label" >Select computer</label>
+                                <select class="form-control form-control-line" name="computer">
+                                    @foreach($computer as $u)
+                                        <option value="{{$u->id}}"> {{ $u->id }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="control-label">Hours</label>
+                                <input type="number" class="form-control form-control-line" name="hours" required>
                             </div>
                         </div>
                         <div class="modal-footer">

@@ -11,7 +11,7 @@
                 <button type="button" class="btn btn-warning add-new" data-toggle="modal" data-target="#myModal" title="Create"><i class="fa fa-plus" ></i> Add New</button>
             </div>
             <div class="table-responsive m-t-40">
-                <table id="example23" class="table table-bordered display table-hover" cellspacing="0" width="100%">
+                <table id="example23" class="table table-bordered table-striped display nowrap table-hover" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th>№</th>
@@ -35,12 +35,12 @@
                                 <div class="row sweetalert justify-content-center">
                                     <div>
                                         <button id="edit-supplier{{$t['id']}}" data-toggle="modal" data-target="#myModal{{$t->id}}" title="Edit" type="button" style="border: 0; background:0">
-                                            <span class="material-icons">&#xE254;</span>
+                                            <span class="material-icons">&#xe8ff;</span>
                                         </button>
                                     </div>
                                     <div>
                                         <button id="delete-supplier" onclick = "deleteSupplier({{ $t->id }})" title="Delete" data-toggle="tooltip" type="button" style="border: 0; background:0">
-                                            <span class="material-icons">&#xE872;</span>
+                                            <span class="material-icons">&#xe92b;</span>
                                         </button>
                                     </div>
                                 </div>

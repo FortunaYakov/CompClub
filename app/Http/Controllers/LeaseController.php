@@ -37,6 +37,7 @@ class LeaseController extends Controller
             'id_user' => request('user'),
             'id_tariff' => request('tariff'),
             'id_computer' => request('computer'),
+            'hours' => request('hours'),
         ]);
         return back();
     }
@@ -47,6 +48,7 @@ class LeaseController extends Controller
             'id_user' => request('user'),
             'id_tariff' => request('tariff'),
             'id_computer' => request('computer'),
+            'hours' => request('hours'),
         ]);
         return  back();
     }

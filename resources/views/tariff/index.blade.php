@@ -44,12 +44,12 @@
                                 <div class="row sweetalert justify-content-center">
                                     <div>
                                         <button id="edit-supplier{{$t['id']}}" data-toggle="modal" data-target="#myModal{{$t->id}}" title="Edit" type="button" style="border: 0; background:0">
-                                            <span class="material-icons">&#xE254;</span>
+                                            <span class="material-icons">&#xe8ff;</span>
                                         </button>
                                     </div>
                                     <div>
                                         <button id="delete-supplier" onclick = "deleteSupplier({{ $t->id }})" title="Delete" data-toggle="tooltip" type="button" style="border: 0; background:0">
-                                            <span class="material-icons">&#xE872;</span>
+                                            <span class="material-icons">&#xe92b;</span>
                                         </button>
                                     </div>
                                 </div>
