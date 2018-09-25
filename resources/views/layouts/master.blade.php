@@ -53,13 +53,13 @@
             <div class="page-wrapper">
                 {{--@include('layouts.breadcrumb')--}}
 
-                @if (session()->has('flash_notification.success'))
-                    <script>
-                        window.onload = function() {
-                            swal("Hey!", "{!! session('flash_notification.success') !!}", "success")
-                        };
-                    </script>
-                @endif
+                {{--@if (session()->has('flash_notification.success'))--}}
+                    {{--<script>--}}
+                        {{--window.onload = function() {--}}
+                            {{--swal("Hey!", "{!! session('flash_notification.success') !!}", "success")--}}
+                        {{--};--}}
+                    {{--</script>--}}
+                {{--@endif--}}
                 <!-- Container fluid  -->
                 <div class="container-fluid">
                     @yield('content')

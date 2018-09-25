@@ -18,17 +18,15 @@ $role = new Role();
                     {{--</ul>--}}
                 {{--</li>--}}
 
-                <li class="nav-label">Info</li>
+                {{--<li class="nav-label">Info</li>--}}
 
-                <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
-                    <ul aria-expanded="false" class="collapse">
+               {{--<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>--}}
                         <li><a href="/computer">Computer</a></li>
                         <li><a href="/lease">Lease</a></li>
                         <li><a href="/staff">Staff</a></li>
                         <li><a href="/tariff">Tariff</a></li>
-                        <li><a href="/typeComputer">Type</a></li>
-                    </ul>
-                </li>
+                        <li><a href="/typeComputer">Type Computer</a></li>
+                {{--</li>--}}
             </ul>
         </nav>
         <!-- End Sidebar navigation -->

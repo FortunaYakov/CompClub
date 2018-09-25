@@ -6,11 +6,11 @@
     <div class="card">
         <div class="card-body">
             <div class="row justify-content-between">
-                <h4 class="card-title">Arrivals Table</h4>
-                <button type="button" class="btn btn-info add-new" data-toggle="modal" data-target="#myModal" title="Create"><i class="fa fa-plus" ></i> Add New</button>
+                <h4 class="card-title">Computers Table</h4>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" title="Create"><i class="fa fa-plus" ></i> Add New</button>
             </div>
             <div class="table-responsive m-t-40">
-                <table id="example23" class="table table-bordered table-striped display nowrap table-hover" cellspacing="0" width="100%">
+                <table id="example23" class="table table-bordered display table-hover" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th>№</th>
@@ -45,12 +45,12 @@
                                 <div class="row sweetalert justify-content-center">
                                     <div>
                                         <button class="edit-arrival" data-toggle="modal" data-target="#edit-arrival{{$comp['id']}}" title="Edit" type="button" style="border: 0; background:0">
-                                            <span class="material-icons">&#xE254;</span>
+                                            <span class="material-icons">&#xe8ff;</span>
                                         </button>
                                     </div>
                                     <div>
                                         <button class="delete-arrival" onclick = "deleteArrival({{ $comp->id }})" title="Delete" data-toggle="tooltip" type="button" style="border: 0; background:0">
-                                            <span class="material-icons">&#xE872;</span>
+                                            <span class="material-icons">&#xe92b;</span>
                                         </button>
                                     </div>
                                 </div>

@@ -8,10 +8,10 @@
         <div class="card-body">
             <div class="row justify-content-between">
                 <h4 class="card-title">Tariff Table</h4>
-                <button type="button" class="btn btn-info add-new" data-toggle="modal" data-target="#myModal" title="Create"><i class="fa fa-plus" ></i> Add New</button>
+                <button type="button" class="btn btn-warning add-new" data-toggle="modal" data-target="#myModal" title="Create"><i class="fa fa-plus" ></i> Add New</button>
             </div>
             <div class="table-responsive m-t-40">
-                <table id="example23" class="table table-bordered table-striped display nowrap table-hover" cellspacing="0" width="100%">
+                <table id="example23" class="table table-bordered display table-hover" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th>№</th>

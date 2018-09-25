@@ -40,7 +40,7 @@ class LoginController extends Controller
 
     protected function authenticated($user)
     {
-        session()->flash('flash_notification.success', 'You have successfully logged in!');
+//        session()->flash('flash_notification.success', 'You have successfully logged in!');
         return redirect()->intended($this->redirectPath());
     }
 
