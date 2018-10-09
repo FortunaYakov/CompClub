@@ -21,10 +21,12 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.2",
+                "fzaninotto/faker": "^1.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "@stable"
+                "phpunit/phpunit": "@stable",
+                "fzaninotto/faker": "^1.4"
             },
             "type": "project",
             "autoload": {
