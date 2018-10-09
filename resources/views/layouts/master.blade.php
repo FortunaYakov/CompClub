@@ -10,7 +10,7 @@
         <meta name="author" content="">
         <!-- Favicon icon -->
         <link rel="icon" href="https://www.freeiconspng.com/uploads/courses-icon-10.png">
-        <title>Ela - Bootstrap Admin Dashboard Template</title>
+        <title>Fortuna's Club</title>
         <!-- Bootstrap Core CSS -->
         <link href="/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
