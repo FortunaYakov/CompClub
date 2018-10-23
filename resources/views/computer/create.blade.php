@@ -36,7 +36,10 @@
                             </div>
                             <div class="form-group col-md-12">
                                 <label class="control-label">Status</label>
-                                <input type="number"class="form-control form-control-line"  name="status" required>
+                                <select class="form-control custom-select" name="status" required>
+                                    <option value=0>Busy</option>
+                                    <option value=1>Free</option>
+                                </select>
                             </div>
                         </div>
                         <div class="modal-footer">
